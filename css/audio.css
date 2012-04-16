@@ -11,10 +11,10 @@
 }
 .audio-js-box.ajs-playing{width:360px;}
 .audio-js-box,.audio-js-box.ajs-playing {
-  -webkit-transition:width 0.35s ease;
-     -moz-transition:width 0.35s ease;
-       -o-transition:width 0.35s ease;
-          transition:width 0.35s ease;
+  -webkit-transition:width 0.15s ease;
+     -moz-transition:width 0.15s ease;
+       -o-transition:width 0.15s ease;
+          transition:width 0.15s ease;
 }
 .ajs-controls {
 	display:block;
@@ -67,10 +67,10 @@
   opacity:1;
   -moz-opacity:1;
   filter:alpha(opacity=100);
-  -webkit-transition:background-position 0.4s linear;
-     -moz-transition:background-position 0.4s linear;
-       -o-transition:background-position 0.4s linear;
-          transition:background-position 0.4s linear;
+  -webkit-transition:background-position 0.2s linear;
+     -moz-transition:background-position 0.2s linear;
+       -o-transition:background-position 0.2s linear;
+          transition:background-position 0.2s linear;
 }
 .ajs-volume-control div {
 	background-color:#ccc;
@@ -89,10 +89,10 @@
 	opacity:1;
 	-moz-opacity:1;
 	filter:alpha(opacity=100);
-	-webkit-transition:opacity 0.35s linear;
-	   -moz-transition:opacity 0.35s linear;
-	     -o-transition:opacity 0.35s linear;
-	        transition:opacity 0.35s linear;
+	-webkit-transition:opacity 0.15s linear;
+	   -moz-transition:opacity 0.15s linear;
+	     -o-transition:opacity 0.15s linear;
+	        transition:opacity 0.15s linear;
 }
 .ajs-playing .ajs-volume-control span {
 	border-bottom-color:#F2F2F2;
@@ -133,10 +133,10 @@
 }
 .ajs-paused .ajs-progress-control .ajs-progress-holder {
   max-width:0;
-  -webkit-transition:max-width 0.35s ease;
-     -moz-transition:max-width 0.35s ease;
-       -o-transition:max-width 0.35s ease;
-          transition:max-width 0.35s ease;
+  -webkit-transition:max-width 0.15s ease;
+     -moz-transition:max-width 0.15s ease;
+       -o-transition:max-width 0.15s ease;
+          transition:max-width 0.15s ease;
 }
 .ajs-progress-control .ajs-load-progress {
 	position:absolute;
