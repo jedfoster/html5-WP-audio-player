@@ -14,3 +14,6 @@ TODO
 - Replace images with an icon font
 
 Audio sample is ["Crookshanks" by Palace Cat](http://palacecat.bandcamp.com/track/crookshanks), via [duplokat](http://duplokat.tumblr.com/post/12695092003/geek-friday-ringtone)
+
+
+*See the standalone [WordPress Audio Player](http://wpaudioplayer.com/standalone/) page for information using and configuring the Flash player.*
