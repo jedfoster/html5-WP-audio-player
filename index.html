@@ -1,0 +1,192 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <title>HTML5 WP Audio Player</title>
+  
+  <link rel="author" href="humans.txt">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+
+  <!-- CSS: implied media="all" -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="css/audio.css">
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="/js/modernizr-1.7.min.js"></script>
+
+</head>
+
+<body class="pg-html5">
+
+  <div class="container">
+    <header>
+			<h1><a href="/">Jed Foster</a></h1>
+			
+			<h2><span>Code. </span><span>Design. </span><span>For the web.</span></h2>
+		</header>
+
+    <div id="main" role="main">
+			<h2>HTML5 WP Audio Player</h2>
+      
+      <p><a href="https://github.com/jedfoster/html5-WP-audio-player">This project</a> is a version of the awesome <a href="http://wpaudioplayer.com/standalone/">WordPress Audio Player</a> by <a href="http://www.1pixelout.net/">Martin Laine</a> for browsers that support HTML5&#8217;s <code>&lt;audio&gt;</code> tag, with fallback to the original WP Audio Player for browsers that don&#8217;t.</p>
+
+      <p>Audio sample is <a href="http://palacecat.bandcamp.com/track/crookshanks">Crookshanks by Palace Cat</a>, via <a href="http://duplokat.tumblr.com/post/12695092003/geek-friday-ringtone">duplokat</a></p>
+
+      <p><em>See the standalone <a href="http://wpaudioplayer.com/standalone/">WordPress Audio Player</a> page for information on using and configuring the Flash player.</em></p>
+
+      <p><a href="https://github.com/jedfoster/html5-WP-audio-player">Fork me on GitHub!</a></p>
+
+      <hr>
+
+      <h3>Standard</h3>
+
+      <div class="audio-js-box wp-css">
+      	<audio class="audio-js" controls preload data-description="Palace Cat - Crookshanks">
+      		<source src="audio/Palace Cat - Crookshanks.mp3" type="audio/mpeg">
+      		<source src="audio/Palace Cat - Crookshanks.ogg" type="audio/ogg">
+      		<source src="audio/Palace Cat - Crookshanks.wav" type="audio/wav">
+
+      		<!-- Minimum width of player is 81px -->
+      		<object type="application/x-shockwave-flash" data="WP-audio-player/player.swf" id="audioplayer576" height="24" width="81">
+      			<param name="movie" value="WP-audio-player/player.swf">
+      			<param name="FlashVars" value="playerID=audioplayer576&soundFile=audio/Palace%20Cat%20-%20Crookshanks.mp3&noinfo=no&titles=Crookshanks&artists=Palace%20Cat">
+      			<param name="quality" value="high">
+      			<param name="menu" value="false">
+      			<param name="wmode" value="transparent">
+
+      	    <p><a href="audio/Palace Cat - Crookshanks.mp3">Download this audio file.</a></p>
+      		</object>
+      	</audio>
+      </div>
+
+      <hr>
+
+      <h3>Right-to-Left (play button on left)</h3>
+
+      <div class="audio-js-box wp-css wp-rtl">
+      	<audio class="audio-js" controls preload data-description="Palace Cat - Crookshanks">
+      		<source src="audio/Palace Cat - Crookshanks.mp3" type="audio/mpeg">
+      		<source src="audio/Palace Cat - Crookshanks.ogg" type="audio/ogg">
+      		<source src="audio/Palace Cat - Crookshanks.wav" type="audio/wav">
+
+      		<!-- Minimum width of player is 81px -->
+      		<object type="application/x-shockwave-flash" data="WP-audio-player/player.swf" id="audioplayer576" height="24" width="81">
+      			<param name="movie" value="WP-audio-player/player.swf">
+      			<param name="FlashVars" value="playerID=audioplayer576&soundFile=audio/Palace%20Cat%20-%20Crookshanks.mp3&noinfo=no&titles=Crookshanks&artists=Palace%20Cat">
+      			<param name="quality" value="high">
+      			<param name="menu" value="false">
+      			<param name="wmode" value="transparent">
+
+      	    <p><a href="audio/Palace Cat - Crookshanks.mp3">Download this audio file.</a></p>
+      		</object>
+      	</audio>
+      </div>
+
+      <hr>
+
+      <h3>The original, Flash version</h3>
+
+      <object type="application/x-shockwave-flash" data="WP-audio-player/player.swf" id="audioplayer2" height="48" width="360">
+      	<param name="movie" value="WP-audio-player/player.swf">
+      	<param name="FlashVars" value="playerID=audioplayer2&soundFile=audio/Palace%20Cat%20-%20Crookshanks.mp3&noinfo=no&titles=Crookshanks&artists=Palace%20Cat">
+      	<param name="quality" value="high">
+      	<param name="menu" value="false">
+      	<param name="wmode" value="transparent">
+
+         <p><a href="audio/Palace Cat - Crookshanks.mp3">Download this audio file.</a></p>
+      </object>
+
+      <script src="js/audio.js"></script>
+
+      <script>
+      	// Run the script on page load.
+
+      	// If using jQuery
+      	// $(function(){
+      	//   AudioJS.setup();
+      	// })
+
+      	// If using Prototype
+      	// document.observe("dom:loaded", function() {
+      	//   AudioJS.setup();
+      	// });
+
+      	// If not using a JS library
+      	// window.onload = function(){
+      	//
+      	// }
+
+      	// Since I'm calling this at the end of the HTML, I can probably get away
+      	// with executing the setup without waiting for a load event. 
+      	AudioJS.setup();
+      </script>
+    </div>
+
+		<div id="sidebar">
+      <nav id="socialLinks">
+        <a href="http://twitter.com/#!/jed_foster" id="twitter">Twitter</a>
+        <a href="http://github.com/jedfoster" id="github">GitHub</a>
+        <a href="http://flickr.com/photos/jedfoster" id="flickr">Flickr</a>
+        <a href="http://jedfoster.com/contact" id="email" class="last">Email</a>
+      </nav>
+      
+      <section id="twttr">
+	      <h1>Recently on Twitter...</h1>
+	      <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+	      <script>
+	      new TWTR.Widget({
+      	  version: 2,
+      	  type: 'profile',
+      	  rpp: 3,
+      	  interval: 8000,
+      	  width: 'auto',
+      	  height: '220',
+      	  theme: {
+      	    shell: {
+      	      background: '#ddd',
+      	      color: '#898989'
+      	    },
+      	    tweets: {
+      	      background: '#ffffff',
+      	      color: '#696969',
+      	      links: '#006eb2'
+      	    }
+      	  },
+      	  features: {
+      	    scrollbar: true,
+      	    loop: false,
+      	    live: false,
+      	    hashtags: false,
+      	    timestamp: true,
+      	    avatars: false,
+      	    behavior: 'all'
+      	  }
+      	}).render().setUser('jed_foster').start();
+      	</script>
+      </section>
+		</div>
+
+    <footer>
+
+    </footer>
+  </div>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+	<script src="/js/prototaculous.min.js"></script>
+
+	<script src="/js/custom.js"></script>
+</body>
+</html>
