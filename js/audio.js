@@ -1049,7 +1049,10 @@ AudioJS.player.newBehavior("spinner", function(element){
       clearInterval(this.spinnerInterval);
     },
     spinnersRotated: 0,
-    rotateSpinners: function(){ },
+    rotateSpinners: function(){ 
+      x = new Number(this.spinner.innerHTML);
+      this.spinner.innerHTML =  x < 7 ? x+1 : 0;
+    },
     spinnersOnAudioLoadedData: function(event){ this.hideSpinners(); },
     spinnersOnAudioLoadStart: function(event){ this.showSpinners(); },
     spinnersOnAudioSeeking: function(event){ /* this.showSpinners(); */ },
