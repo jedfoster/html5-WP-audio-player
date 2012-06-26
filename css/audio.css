@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'AudioPlayer-UI';
+  src: url('AudioPlayer-UI.eot');
+  src: url('AudioPlayer-UI.eot?#iefix') format('embedded-opentype'),
+       url('AudioPlayer-UI.woff') format('woff'),
+       url('AudioPlayer-UI.ttf') format('truetype'),
+       url('AudioPlayer-UI.svg#AudioPlayer-UI') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .audio-js-box audio{width:0;height:0;display:block;}
 .audio-js-box.ajs-ios audio{width:360px;height:3em;}
 
