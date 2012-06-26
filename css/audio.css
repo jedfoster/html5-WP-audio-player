@@ -9,6 +9,16 @@
   font-style: normal;
 }
 
+.ajs-play-control span:after,
+.ajs-volume-control div:after,
+.ajs-spinner {
+  font-family: "AudioPlayer-UI";
+  text-shadow:none;
+  line-height: 26px;
+  color: #595959;
+  text-align:center;
+  font-size: 18px;
+}
 
 .audio-js-box audio{width:0;height:0;display:block;}
 .audio-js-box.ajs-ios audio{width:360px;height:3em;}
@@ -57,32 +67,19 @@
 	right:0;
 	background-color:#B4B4B4;
 	cursor:pointer !important;
-	
   text-align:center;
 }
-.ajs-play-control span {  
+.ajs-play-control span {
   margin: 0 auto;
   display:block;
   width: 20px;
 }
 
-.ajs-play-control span:after{
-  content: "o";
-  font-family: "AudioPlayer-UI";
-  text-shadow:none;
-  font-size: 18px;
-  color: #595959;
-  line-height: 26px;
-}
+.ajs-play-control span:after{content: "o";}
+.ajs-playing .ajs-play-control span:after{content: "p";}
+
 .ajs-play-control:hover{background-color:#999;}
-
-.ajs-playing .ajs-play-control span:after{
-  content: "p";
-}
-
-.ajs-play-control:hover span:after{
-  color:#eee;
-}
+.ajs-play-control:hover span:after{color:#eee;}
 
 /* --- END Play Button --- */
 
@@ -105,31 +102,26 @@
 .ajs-volume-control span:nth-child(5){border-bottom-width:15px;height:5px;}
 .ajs-playing .ajs-volume-control{cursor:pointer !important;}
 .ajs-playing .ajs-volume-control div {
-  opacity:1;
-  -moz-opacity:1;
   filter:alpha(opacity=100);
+  -moz-opacity:1;
+  opacity:1;
 	-webkit-transition:opacity 0.15s linear;
 	   -moz-transition:opacity 0.15s linear;
 	     -o-transition:opacity 0.15s linear;
 	        transition:opacity 0.15s linear;
 }
-.ajs-volume-control div:after {  
-  background-color:#ccc;
-  opacity:1;
-  -moz-opacity:1;
-  filter:alpha(opacity=100);
+.ajs-volume-control div:after {
   content: "u";
-  font-family: "AudioPlayer-UI";
-  text-shadow:none;
-  font-size: 18px;
-  line-height: 26px;
-  color: #595959;
+  background-color:#ccc;
+  filter:alpha(opacity=100);
+  -moz-opacity:1;
+  opacity:1;
 }
 
 .ajs-playing .ajs-volume-control div:after {
-  opacity:0;
-  -moz-opacity:0;
   filter:alpha(opacity=0);
+  -moz-opacity:0;
+  opacity:0;
 }
 .ajs-playing .ajs-volume-control span {
 	border-bottom-color:#F2F2F2;
@@ -204,13 +196,7 @@
   z-index:1;
   margin:0;
   background-color: #ccc;
-  font-family: "AudioPlayer-UI";
-  text-shadow:none;
   font-size: 16px;
-  color: #595959;
-  text-align:center;
-  font-size: 16px;
-  line-height: 26px;
 }
 
 /* --- Description --- */
