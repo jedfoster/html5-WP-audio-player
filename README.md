@@ -11,9 +11,15 @@ TODO
 ----
 
 - Documentation
-- Replace images with an icon font
+
+CREDIT WHERE IT'S DUE
+----
 
 Audio sample is ["Crookshanks" by Palace Cat](http://palacecat.bandcamp.com/track/crookshanks), via [duplokat](http://duplokat.tumblr.com/post/12695092003/geek-friday-ringtone)
+
+The `speaker`, `play`, and `pause` icons are from [Tipogram](http://tipogram.com), by [Tom Creighton](http://twitter.com/tomcreighton) who graciously granted permission for me to include them in this project.
+
+The loading `spinner` icons are from [Web Symbols](http://www.justbenicestudio.com/studio/websymbols/)
 
 
 *See the standalone [WordPress Audio Player](http://wpaudioplayer.com/standalone/) page for information using and configuring the Flash player.*
