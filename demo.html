@@ -99,7 +99,7 @@
 
 		// Since I'm calling this at the end of the HTML, I can probably get away
 		// with executing the setup without waiting for a load event. 
-		AudioJS.setup();
+		AudioJS.setup(false, {controlsAtStart: true});
 	</script>
 </body>
 </html>

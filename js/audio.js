@@ -60,9 +60,9 @@ var AudioJS = JRClass.extend({
       playerFallbackOrder: ["html5", "links"] // Players and order to use them
     };
     // Override default options with global options
-    if (typeof AudioJS.options == "object") { this.merge(this.options, AudioJS.options); }
+    if (typeof AudioJS.options == "object") { AudioJS.merge(this.options, AudioJS.options); }
     // Override default & global options with options specific to this player
-    if (typeof setOptions == "object") { this.merge(this.options, setOptions); }
+    if (typeof setOptions == "object") { AudioJS.merge(this.options, setOptions); }
     // Override preload & autoplay with audio attributes
     if (this.getPreloadAttribute() !== undefined) { this.options.preload = this.getPreloadAttribute(); }
     if (this.getAutoplayAttribute() !== undefined) { this.options.autoplay = this.getAutoplayAttribute(); }
@@ -427,6 +427,7 @@ AudioJS.player.extend({
   /* Wait for styles (TODO: move to _A_)
   ================ */
   loadInterface: function(){
+
     if (this.options.controlsAtStart) { this.showControlBars(); }
     this.positionControlBars();
   },
@@ -771,9 +772,17 @@ AudioJS.player.newBehavior("controlBar", function(element){
     _A_.addListener(element, "mouseout", this.onControlBarsMouseOut.context(this));
   },{
     showControlBars: function(){
+
       if (!this.options.controlsAtStart && !this.hasPlayed) { return; }
       this.each(this.controlBars, function(bar){
+              
+        bar.style.maxWidth = "100%";
         bar.style.display = "block";
+        _A_.removeClass(this.box, "ajs-paused");
+        console.log(bar);
+console.log(this.box);       
+        this.box.style.width = "360px";
+        bar.style.width = _A_.round(this.bufferedPercent() * 100, 2) + "%";
       });
     },
     // Place controller relative to the audio's position (now just resizing bars)
