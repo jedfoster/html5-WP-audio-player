@@ -427,7 +427,6 @@ AudioJS.player.extend({
   /* Wait for styles (TODO: move to _A_)
   ================ */
   loadInterface: function(){
-
     if (this.options.controlsAtStart) { this.showControlBars(); }
     this.positionControlBars();
   },
@@ -772,17 +771,9 @@ AudioJS.player.newBehavior("controlBar", function(element){
     _A_.addListener(element, "mouseout", this.onControlBarsMouseOut.context(this));
   },{
     showControlBars: function(){
-
       if (!this.options.controlsAtStart && !this.hasPlayed) { return; }
       this.each(this.controlBars, function(bar){
-              
-        bar.style.maxWidth = "100%";
         bar.style.display = "block";
-        _A_.removeClass(this.box, "ajs-paused");
-        console.log(bar);
-console.log(this.box);       
-        this.box.style.width = "360px";
-        bar.style.width = _A_.round(this.bufferedPercent() * 100, 2) + "%";
       });
     },
     // Place controller relative to the audio's position (now just resizing bars)

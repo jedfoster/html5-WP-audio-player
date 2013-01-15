@@ -41,6 +41,29 @@
 	</div>
 	
 	<hr>
+	
+	<h2>Standard (open at start)</h2>
+
+	<div class="audio-js-box wp-css open-at-start">
+		<audio class="audio-js" controls preload data-description="Palace Cat - Crookshanks">
+			<source src="audio/Palace Cat - Crookshanks.mp3" type="audio/mpeg">
+			<source src="audio/Palace Cat - Crookshanks.ogg" type="audio/ogg">
+			<source src="audio/Palace Cat - Crookshanks.wav" type="audio/wav">
+
+			<!-- Minimum width of player is 81px -->
+			<object type="application/x-shockwave-flash" data="WP-audio-player/player.swf" id="audioplayer576" height="24" width="81">
+				<param name="movie" value="WP-audio-player/player.swf">
+				<param name="FlashVars" value="playerID=audioplayer576&soundFile=audio/Palace%20Cat%20-%20Crookshanks.mp3&noinfo=no&titles=Crookshanks&artists=Palace%20Cat">
+				<param name="quality" value="high">
+				<param name="menu" value="false">
+				<param name="wmode" value="transparent">
+
+		    <p><a href="audio/Palace Cat - Crookshanks.mp3">Download this audio file.</a></p>
+			</object>
+		</audio>
+	</div>
+	
+	<hr>
 
 	<h2>Right-to-Left (play button on left)</h2>
 
@@ -64,8 +87,31 @@
 	</div>
 
 	<hr>
+	
+	<h2>Right-to-Left (play button on left, open at start)</h2>
 
-	<h2>The original, Flash version</h2>
+	<div class="audio-js-box wp-css wp-rtl open-at-start">
+		<audio class="audio-js" controls preload data-description="Palace Cat - Crookshanks">
+			<source src="audio/Palace Cat - Crookshanks.mp3" type="audio/mpeg">
+			<source src="audio/Palace Cat - Crookshanks.ogg" type="audio/ogg">
+			<source src="audio/Palace Cat - Crookshanks.wav" type="audio/wav">
+
+			<!-- Minimum width of player is 81px -->
+			<object type="application/x-shockwave-flash" data="WP-audio-player/player.swf" id="audioplayer576" height="24" width="81">
+				<param name="movie" value="WP-audio-player/player.swf">
+				<param name="FlashVars" value="playerID=audioplayer576&soundFile=audio/Palace%20Cat%20-%20Crookshanks.mp3&noinfo=no&titles=Crookshanks&artists=Palace%20Cat">
+				<param name="quality" value="high">
+				<param name="menu" value="false">
+				<param name="wmode" value="transparent">
+
+		    <p><a href="audio/Palace Cat - Crookshanks.mp3">Download this audio file.</a></p>
+			</object>
+		</audio>
+	</div>
+
+	<hr>
+
+	<h2>The original Flash version</h2>
 
 	<object type="application/x-shockwave-flash" data="WP-audio-player/player.swf" id="audioplayer2" height="24" width="360">
 		<param name="movie" value="WP-audio-player/player.swf">
@@ -85,7 +131,7 @@
 		// If using jQuery
 		// $(function(){
 		//   AudioJS.setup();
-		// })
+		// });
 
 		// If using Prototype
 		// document.observe("dom:loaded", function() {
@@ -93,9 +139,9 @@
 		// });
 
 		// If not using a JS library
-		// window.onload = function(){
-		//
-		// }
+		// (function(){
+		//   AudioJS.setup();
+		// });
 
 		// Since I'm calling this at the end of the HTML, I can probably get away
 		// with executing the setup without waiting for a load event. 
