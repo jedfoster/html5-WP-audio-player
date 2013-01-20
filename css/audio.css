@@ -31,7 +31,7 @@
   font:11px "Lucida Grande",Lucida,Verdana,sans-serif;
 	height:24px;
 }
-.audio-js-box.ajs-playing{width:360px;}
+.audio-js-box.ajs-playing, .audio-js-box.open-at-start{width:360px;}
 .audio-js-box,.audio-js-box.ajs-playing {
   -webkit-transition:width 0.15s ease;
      -moz-transition:width 0.15s ease;
@@ -168,6 +168,13 @@
      -moz-transition:max-width 0.15s ease;
        -o-transition:max-width 0.15s ease;
           transition:max-width 0.15s ease;
+}
+.ajs-paused.open-at-start .ajs-progress-control .ajs-progress-holder {
+  max-width: 100%;
+  -webkit-transition:none;
+     -moz-transition:none;
+       -o-transition:none;
+          transition:none;
 }
 .ajs-progress-control .ajs-load-progress {
 	position:absolute;
